@@ -29,6 +29,7 @@ import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 
+
 @Composable
 fun FormDataDiri(modifier: Modifier) {
 
@@ -71,7 +72,7 @@ fun FormDataDiri(modifier: Modifier) {
                     RadioButton(
                         selected = textJK == item,
                         onClick = {
-                            text(text = item)
+                            Text(text = item)
                         })
                     Text(text = item)
                 }
@@ -105,7 +106,7 @@ fun FormDataDiri(modifier: Modifier) {
                 alamat=textAlamat
             }
         ){
-            Text(text = stringResource(id = R.string.submit))
+            Text(text = stringResource(id = R.string.Submit))
         }
         HorizontalDivider(
             modifier = Modifier.padding(
