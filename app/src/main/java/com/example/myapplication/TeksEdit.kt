@@ -4,6 +4,7 @@ import android.R.attr.text
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.material3.HorizontalDivider
@@ -76,5 +77,12 @@ fun FormDataDiri(modifier: Modifier) {
                 textAlamat = it
             }
         )
+        HorizontalDivider(
+            modifier = Modifier.padding(
+                bottom = dimensionResource(R.dimen.padding_medium),
+                top = dimensionResource(
+                    id = R.dimen.padding_medium
+                )),
+           
     }
 }
