@@ -1,5 +1,12 @@
 package com.example.myapplication
 
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
+import androidx.compose.material3.OutlinedTextField
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+
 @Composable
 fun FormDataDiri(modifier: Modifier) {
 
@@ -36,8 +43,16 @@ fun FormDataDiri(modifier: Modifier) {
                 Row(modifier = Modifier.selecttable(
                     selected = textJk == item,
                     onClick = {textJK = item}
-                ))
+                ), verticalAlignment = Alignment.CenterVertically) {
+                    RadioButton(
+                        selected = textJK == item,
+                        onClick = {
+                            text(text = item)
+                        })
+                    Text(text = item)
+                }
             }
         }
+
     }
 }
