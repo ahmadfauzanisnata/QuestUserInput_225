@@ -98,4 +98,12 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                         }
                     }
 
-                   
+                    Spacer(modifier = Modifier.height(8.dp))
+
+
+                    Text(
+                        text = "STATUS PERKAWINAN",
+                        fontWeight = FontWeight.Medium,
+                        fontSize = 14.sp,
+                        modifier = Modifier.padding(bottom = 4.dp)
+                    )
