@@ -30,4 +30,14 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
             verticalArrangement = Arrangement.Top,
             modifier = Modifier
                 .padding(top = 60.dp, start = 16.dp, end = 16.dp)
-        )
+        ) {
+
+
+            Card(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .wrapContentHeight(),
+                shape = RoundedCornerShape(16.dp),
+                elevation = CardDefaults.cardElevation(defaultElevation = 8.dp),
+                colors = CardDefaults.cardColors(containerColor = Color.White)
+            ) 
