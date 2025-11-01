@@ -2,7 +2,20 @@ package com.example.myapplication
 
 
 
-
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.selection.selectable
+import androidx.compose.material3.*
+import androidx.compose.runtime.*
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Brush
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 
 @Composable
 fun FormDataDiri(modifier: Modifier = Modifier) {
@@ -144,4 +157,18 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                     Spacer(modifier = Modifier.height(24.dp))
 
 
-                   
+                    Button(
+                        onClick = { /* aksi submit */ },
+                        colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF1E40FF)),
+                        shape = RoundedCornerShape(12.dp),
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .height(48.dp)
+                    ) {
+                        Text(text = "Submit", color = Color.White, fontSize = 16.sp)
+                    }
+                }
+            }
+        }
+    }
+}
