@@ -74,4 +74,9 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                     Spacer(modifier = Modifier.height(16.dp))
 
 
-                   
+                    Text(
+                        text = "JENIS KELAMIN",
+                        fontWeight = FontWeight.Medium,
+                        fontSize = 14.sp,
+                        modifier = Modifier.padding(bottom = 4.dp)
+                    )
