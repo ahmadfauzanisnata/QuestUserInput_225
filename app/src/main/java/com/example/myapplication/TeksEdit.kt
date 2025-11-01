@@ -89,4 +89,13 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                                     onClick = { jenisKelamin = item }
                                 )
                                 .padding(vertical = 4.dp)
-                        ) 
+                        ) {
+                            RadioButton(
+                                selected = (jenisKelamin == item),
+                                onClick = { jenisKelamin = item }
+                            )
+                            Text(text = item)
+                        }
+                    }
+
+                   
