@@ -57,3 +57,10 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                         textAlign = TextAlign.Center
                     )
 
+
+                    Text(
+                        text = "NAMA LENGKAP",
+                        fontWeight = FontWeight.Medium,
+                        fontSize = 14.sp,
+                        modifier = Modifier.padding(bottom = 4.dp)
+                    )
