@@ -24,4 +24,10 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                 )
             ),
         contentAlignment = Alignment.TopCenter
-    ) 
+    ) {
+        Column(
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.Top,
+            modifier = Modifier
+                .padding(top = 60.dp, start = 16.dp, end = 16.dp)
+        )
