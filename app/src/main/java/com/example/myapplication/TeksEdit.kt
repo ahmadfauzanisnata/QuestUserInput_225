@@ -80,3 +80,13 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                         fontSize = 14.sp,
                         modifier = Modifier.padding(bottom = 4.dp)
                     )
+                    listGender.forEach { item ->
+                        Row(
+                            verticalAlignment = Alignment.CenterVertically,
+                            modifier = Modifier
+                                .selectable(
+                                    selected = (jenisKelamin == item),
+                                    onClick = { jenisKelamin = item }
+                                )
+                                .padding(vertical = 4.dp)
+                        ) 
