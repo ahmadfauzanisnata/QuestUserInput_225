@@ -14,3 +14,14 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
 
     val listGender = listOf("Laki-laki", "Perempuan")
     val listStatus = listOf("Janda", "Lajang", "Duda")
+
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(
+                Brush.verticalGradient(
+                    colors = listOf(Color(0xFFB388FF), Color.White)
+                )
+            ),
+        contentAlignment = Alignment.TopCenter
+    ) 
