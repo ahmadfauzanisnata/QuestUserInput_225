@@ -64,3 +64,14 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                         fontSize = 14.sp,
                         modifier = Modifier.padding(bottom = 4.dp)
                     )
+                    OutlinedTextField(
+                        value = nama,
+                        onValueChange = { nama = it },
+                        placeholder = { Text("Isian nama lengkap") },
+                        modifier = Modifier.fillMaxWidth()
+                    )
+
+                    Spacer(modifier = Modifier.height(16.dp))
+
+
+                   
