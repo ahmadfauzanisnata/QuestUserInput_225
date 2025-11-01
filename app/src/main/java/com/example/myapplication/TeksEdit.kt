@@ -107,3 +107,13 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                         fontSize = 14.sp,
                         modifier = Modifier.padding(bottom = 4.dp)
                     )
+                    listStatus.forEach { item ->
+                        Row(
+                            verticalAlignment = Alignment.CenterVertically,
+                            modifier = Modifier
+                                .selectable(
+                                    selected = (status == item),
+                                    onClick = { status = item }
+                                )
+                                .padding(vertical = 4.dp)
+                        ) 
