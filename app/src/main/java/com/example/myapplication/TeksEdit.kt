@@ -44,4 +44,16 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                 Column(
                     modifier = Modifier
                         .padding(20.dp)
-                ) 
+                ) {
+
+                    Text(
+                        text = "Formulir Pendaftaran",
+                        fontSize = 20.sp,
+                        fontWeight = FontWeight.Bold,
+                        color = Color(0xFF7C4DFF),
+                        modifier = Modifier
+                            .fillMaxWidth()
+                            .padding(bottom = 20.dp),
+                        textAlign = TextAlign.Center
+                    )
+
